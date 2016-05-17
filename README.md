@@ -1,1 +1,1 @@
-# courseraStuff
+# coursera-stuff
