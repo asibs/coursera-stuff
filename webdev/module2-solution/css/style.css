@@ -1,0 +1,73 @@
+/* Base style - use border box & reset margins / padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+div.section {
+    border: 1px solid #000000;
+    background-color: #CCCCCC;
+    position: relative;
+    padding: 45px 15px 15px 15px;
+}
+
+h1 {
+    font-size: 1.75em;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.25em;
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+
+/* Section specific styles */
+#chicken > h2 {
+    background-color: #FFAAAA;
+}
+
+#beef > h2 {
+    background-color: #AAFFAA;
+}
+
+#sushi > h2 {
+    background-color: #AAAAFF;
+}
+
+
+/* Responsive styling */
+div.responsive {
+    float: left;
+    padding: 15px 15px;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+}
