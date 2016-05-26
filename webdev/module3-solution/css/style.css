@@ -19,12 +19,20 @@ h3 {
 }
 
 /* Navbar styles */
+.navbar {
+    border-radius: 0px;
+}
+
 .navbar-brand {
     height: auto;
 }
 
 .navbar-brand h1 {
     margin: 0px;
+}
+
+.navbar-toggle:hover {
+    cursor: pointer;
 }
 
 #nav-list {
@@ -39,10 +47,7 @@ h3 {
 }
 
 /* Page Content styles */
-#page-content {
+#tall-section {
     min-height: 1500px;
-}
-
-#page-content div {
     background-color: #FFBBBB;
 }
