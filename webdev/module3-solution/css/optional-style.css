@@ -1,0 +1,57 @@
+/* Base style - use border box & reset margins / padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+h1 {
+    font-size: 1.75em;
+}
+
+h2 {
+    font-size: 1.50em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+/* Navbar styles */
+.navbar-brand {
+    height: auto;
+}
+
+.navbar-brand h1 {
+    margin: 0px;
+}
+
+#nav-list {
+    background-color: #BBFFBB;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#nav-list hr {
+    margin: 0px;
+    border-top: 1px solid #33FF33;
+}
+
+/* Page Content styles */
+.section {
+    min-height: 700px;
+}
+
+/* Section specific styles */
+#chicken {
+    background-color: #FFAAAA;
+}
+
+#beef {
+    background-color: #AAFFAA;
+}
+
+#sushi {
+    background-color: #AAAAFF;
+}
