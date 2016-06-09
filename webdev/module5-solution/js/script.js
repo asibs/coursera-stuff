@@ -84,7 +84,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl, 
   function (categories) {
-    console.log("Called function for " + allCategoriesUrl);
+    console.log("Called ajax function after getting result from " + allCategoriesUrl);
     buildAndShowHomeHTML(categories);
   },
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
@@ -101,13 +101,12 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-      console.log("Called function for " + homeHtmlUrl);
+      console.log("Called ajax function after getting result from " + homeHtmlUrl);
 
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
-
       console.log("Got random category " + chosenCategoryShortName);
       
 
@@ -121,7 +120,6 @@ function buildAndShowHomeHTML (categories) {
       // $dc.loadMenuItems('L')
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
-      // 
       var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
       
 
